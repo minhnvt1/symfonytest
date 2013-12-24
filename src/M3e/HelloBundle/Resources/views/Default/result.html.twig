@@ -1,0 +1,31 @@
+{% extends 'OroUIBundle:Default:index.html.twig' %}
+{% block title %}
+	Google Search
+{% endblock %}
+{% block content %}
+	<div class="container-fluid search-header clearfix">
+	    <div class="navigation clearfix navbar-extra navbar-extra-right">
+			<div class="row">
+
+				<div class="span9">
+					<div class="pull-left">
+						<div class="container-fluid">
+							<div class="container-fluid">
+								<h2 class="oro-subtitle">Google Search</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layout-content" style="">
+	    	<iframe src="{{url}}" width="100%" frameborder="0" marginheight="0" marginwidth="0" height = "500" scrolling="yes" name="myIframe" id="myIframe"></iframe>
+	    </div>
+	    <script language="javascript">
+		
+			var objFrame=document.getElementById("myIframe");
+			objFrame.src="{{url}}";
+		
+		</script>
+    </div>
+{% endblock %}

@@ -1,0 +1,6 @@
+m3e_hello_homepage:
+    path:  /hello-oro
+    defaults: { _controller: M3eHelloBundle:Default:index }
+m3e_hello_result:
+    path:  /hello-oro/result
+    defaults: { _controller: M3eHelloBundle:Default:result }

@@ -1,0 +1,28 @@
+{% extends 'OroUIBundle:Default:index.html.twig' %}
+{% block title %}
+	Google Search
+{% endblock %}
+{% block content %}
+	<div class="container-fluid search-header clearfix">
+	    <div class="navigation clearfix navbar-extra navbar-extra-right">
+			<div class="row">
+
+				<div class="span9">
+					<div class="pull-left">
+						<div class="container-fluid">
+							<div class="container-fluid">
+								<h2 class="oro-subtitle">Google Search</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="layout-content" style="">
+	    	<form action="{{ path('m3e_hello_result')}}" method="get" class="form-inline search-form">
+		      {{ form_widget(form.query) }}
+		      <button type="submit" class="btn btn-search btn-primary">Search</button>
+		    </form>
+	    </div>
+    </div>
+{% endblock %}
